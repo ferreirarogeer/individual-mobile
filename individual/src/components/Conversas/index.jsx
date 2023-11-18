@@ -1,9 +1,8 @@
-// Conversas.js
 import React from 'react';
 import { View, Text, TouchableOpacity, FlatList, Image, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { Entypo } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { Entypo, MaterialCommunityIcons, Ionicons, MaterialIcons } from '@expo/vector-icons';
+
 
 const Conversas = () => {
   const navigation = useNavigation();
@@ -32,19 +31,22 @@ const Conversas = () => {
     <View style={styles.container}>
       <View style={styles.whatsappContainer}>
         <Text style={styles.whatsapp}>Whatsapp</Text>
-        <Entypo style={styles.lupa} name="magnifying-glass" size={24} color="black" />
-        <MaterialCommunityIcons style={styles.pontos} name="dots-vertical" size={24} color="black" />
+        <Entypo style={styles.lupa} name="magnifying-glass" />
+        <MaterialCommunityIcons style={styles.pontos} name="dots-vertical" />
       </View>
 
       <View style={styles.tabBar}>
         <TouchableOpacity onPress={() => navigation.navigate('ConversasScreen')}>
-          <Text style={styles.tabText}>Conversas</Text>
+          <Ionicons style={styles.tabCamera} name="camera" />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('ConversasScreen')}>
+          <Text style={styles.tabConversas}>Conversas</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('StatusScreen')}>
-          <Text style={styles.tabText}>Status</Text>
+          <Text style={styles.tabStatus}>Status</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('ChamadasScreen')}>
-          <Text style={styles.tabText}>Chamadas</Text>
+          <Text style={styles.tabChamadas}>Chamadas</Text>
         </TouchableOpacity>
       </View>
       <FlatList
@@ -53,6 +55,13 @@ const Conversas = () => {
         renderItem={renderItem}
         style={styles.chatList}
       />
+
+      {/* Botão Flutuante */}
+      <TouchableOpacity style={styles.floatingButton}>
+        <View style={styles.floatingButtonInner}>
+          <MaterialIcons style={styles.cruz} name="add-box" />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -100,10 +109,33 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
   },
-  tabText: {
-    fontSize: 16,
-    color: 'white',
+
+  tabCamera: {
+    fontSize: 20,
+    color: "#82B3AF",
   },
+
+  tabConversas: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#ffffff',
+    borderBottomWidth: 2,
+    borderBottomColor: 'white',
+    paddingBottom: 11,
+    marginBottom: -10,
+    paddingHorizontal: 10,
+  },
+
+  tabStatus: {
+    fontSize: 16,
+    color: '#82B3AF',
+  },
+
+  tabChamadas: {
+    fontSize: 16,
+    color: '#82B3AF',
+  },
+
   whatsappContainer: {
     alignSelf: 'flex-start',
     padding: 20,
@@ -127,8 +159,40 @@ const styles = StyleSheet.create({
     alignSelf: 'flex start',
     right: 20,
     position: 'absolute',
-  }
-  
+  },
+
+  // Estilos para o botão flutuante
+  floatingButton: {
+    position: 'absolute',
+    bottom: 16,
+    right: 16,
+    backgroundColor: '#075C55',
+    borderRadius: 15,
+    width: 56,
+    height: 56,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 4,
+  },
+  floatingButtonInner: {
+    width: 30,
+    height: 30,
+    borderRadius: 5,
+    // backgroundColor: '#128C7E',
+    justifyContent: 'center',
+  },
+
+  cruz: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    // justifyContent: 'center' ,
+    margin: 3,
+    color: "#ffffff",
+
+  },
+
+
+
 });
 
 export default Conversas;

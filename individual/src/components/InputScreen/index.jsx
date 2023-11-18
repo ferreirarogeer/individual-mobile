@@ -4,14 +4,18 @@ import { View, TextInput, TouchableOpacity, Alert, StyleSheet, Text } from 'reac
 
 const InputScreen = () => {
   const [inputValue, setInputValue] = useState('');
+  const [displayedValue, setDisplayedValue] = useState('');
 
   const handleButtonPress = () => {
     Alert.alert('Conteúdo do Input', inputValue);
+    setDisplayedValue(inputValue); // Atualiza o conteúdo exibido
+    setInputValue(''); // Limpa o espaço onde se escreve algo
   };
 
   return (
     <View style={styles.container}>
       <Text>Tela de Input</Text>
+      <Text style={styles.displayedText}>{displayedValue}</Text>
       <TextInput
         style={styles.input}
         placeholder="Digite algo"
@@ -42,6 +46,11 @@ const styles = StyleSheet.create({
   button: {
     padding: 10,
     backgroundColor: 'lightblue',
+  },
+  displayedText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginTop: 20,
   },
 });
 
