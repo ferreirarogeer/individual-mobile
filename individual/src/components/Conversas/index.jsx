@@ -31,12 +31,16 @@ const Conversas = () => {
     <View style={styles.container}>
       <View style={styles.whatsappContainer}>
         <Text style={styles.whatsapp}>Whatsapp</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('PontosScreen')}>
         <Entypo style={styles.lupa} name="magnifying-glass" />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('PontosScreen')}>
         <MaterialCommunityIcons style={styles.pontos} name="dots-vertical" />
+        </TouchableOpacity>
       </View>
 
       <View style={styles.tabBar}>
-        <TouchableOpacity onPress={() => navigation.navigate('ConversasScreen')}>
+        <TouchableOpacity onPress={() => navigation.navigate('CameraScreen')}>
           <Ionicons style={styles.tabCamera} name="camera" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('ConversasScreen')}>
@@ -57,8 +61,8 @@ const Conversas = () => {
       />
 
       {/* Botão Flutuante */}
-      <TouchableOpacity style={styles.floatingButton}>
-        <View style={styles.floatingButtonInner}>
+      <TouchableOpacity style={styles.botaoFlutuante}>
+        <View style={styles.botaoFlutuanteDentro}>
           <MaterialIcons style={styles.cruz} name="add-box" />
         </View>
       </TouchableOpacity>
@@ -150,19 +154,21 @@ const styles = StyleSheet.create({
     fontSize:  18,
     color: 'white',
     alignSelf: 'flex start',
-    right: 45,
+    right: -145,
+    marginTop: -26,
     position: 'absolute',
   },
   pontos: {
     fontSize:  18,
     color: 'white',
     alignSelf: 'flex start',
-    right: 20,
+    right: -170,
+    marginTop: -25,
     position: 'absolute',
   },
 
   // Estilos para o botão flutuante
-  floatingButton: {
+  botaoFlutuante: {
     position: 'absolute',
     bottom: 16,
     right: 16,
@@ -174,7 +180,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     elevation: 4,
   },
-  floatingButtonInner: {
+  botaoFlutuanteDentro: {
     width: 30,
     height: 30,
     borderRadius: 5,
