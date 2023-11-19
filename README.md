@@ -30,13 +30,13 @@
 
 
 ## Ferramentas e tecnologias
+- [GitHub]() <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30" height="30"/>
 - ![React Native](https://img.shields.io/badge/React%20Native-0.64-blue?logo=react)
 - ![Expo](https://img.shields.io/badge/Expo-42.0.1-lightgrey?logo=expo)
 - ![React Navigation](https://img.shields.io/badge/React%20Navigation-6.0.2-blueviolet?logo=react)
 - ![Expo Vector Icons](https://img.shields.io/badge/Expo%20Vector%20Icons-12.0.0-yellow?logo=expo)
 - [npm](https://www.npmjs.com/) ![npm](https://img.shields.io/badge/npm-7.21.1-red?logo=npm)
 - [npx](https://www.npmjs.com/package/npx) ![npx](https://img.shields.io/badge/npx-7.21.1-blue?logo=npm)
-- [Git]() <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="30" height="30"/>
 
 ## Licença
 - [APACHE LICENSE](https://www.apache.org/licenses/LICENSE-2.0)
