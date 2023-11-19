@@ -34,7 +34,7 @@
 - ![Expo](https://img.shields.io/badge/Expo-42.0.1-lightgrey?logo=expo)
 - ![React Navigation](https://img.shields.io/badge/React%20Navigation-6.0.2-blueviolet?logo=react)
 - ![Expo Vector Icons](https://img.shields.io/badge/Expo%20Vector%20Icons-12.0.0-yellow?logo=expo)
-- [GitHub](https://github.com/) ![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)
+- ![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)
 
 ## Licença
 - [APACHE LICENSE](https://www.apache.org/licenses/LICENSE-2.0)
