@@ -30,11 +30,11 @@
 
 
 ## Ferramentas e tecnologias
-- [GitHub]() <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30" height="30"/>
-- [React Native](https://reactnative.dev/) <img loading="lazy" src="https://img.shields.io/badge/React%20Native-0.64-blue?logo=react" width="30" height="30"/>
-- [Expo](https://expo.dev/) <img loading="lazy" src="https://img.shields.io/badge/Expo-42.0.1-lightgrey?logo=expo" width="30" height="30"/>
-- [React Navigation](https://reactnavigation.org/) <img loading="lazy" src="https://img.shields.io/badge/React%20Navigation-6.0.2-blueviolet?logo=react" width="30" height="30"/>
-- [Expo Vector Icons](https://docs.expo.dev/guides/icons/) <img loading="lazy" src="https://img.shields.io/badge/Expo%20Vector%20Icons-12.0.0-yellow?logo=expo" width="30" height="30"/>
+- ![React Native](https://img.shields.io/badge/React%20Native-0.64-blue?logo=react)
+- ![Expo](https://img.shields.io/badge/Expo-42.0.1-lightgrey?logo=expo)
+- ![React Navigation](https://img.shields.io/badge/React%20Navigation-6.0.2-blueviolet?logo=react)
+- ![Expo Vector Icons](https://img.shields.io/badge/Expo%20Vector%20Icons-12.0.0-yellow?logo=expo)
+- [GitHub](https://github.com/) ![GitHub](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg)
 
 ## Licença
 - [APACHE LICENSE](https://www.apache.org/licenses/LICENSE-2.0)
