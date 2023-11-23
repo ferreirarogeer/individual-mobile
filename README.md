@@ -31,7 +31,7 @@
 ## Comparação de Telas
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
     <img src="https://github.com/ferreirarogeer/individual-mobile/blob/main/Original.jpg" alt="Tela de Conversas Original" width="300" style="margin-right: 10px;"/>
-    <img src="https://github.com/ferreirarogeer/individual-mobile/blob/main/Clone.jpg" alt="Clone da Tela de Conversas Criado" width="300" style="margin-left: 10px;"/>
+    <img src="https://github.com/ferreirarogeer/individual-mobile/blob/main/clone%202.jpg" alt="Clone da Tela de Conversas Criado" width="300" style="margin-left: 10px;"/>
 </div>
 
 
