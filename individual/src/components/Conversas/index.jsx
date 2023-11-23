@@ -4,11 +4,12 @@ import { useNavigation } from '@react-navigation/native';
 import { Entypo, MaterialCommunityIcons, Ionicons, MaterialIcons } from '@expo/vector-icons';
 
 
+
 const Conversas = () => {
   const navigation = useNavigation();
 
   const data = [
-    { id: '1', name: 'Silvio', lastMessage: 'Oi, como você está?', photo: require('../../../assets/silvio.jpg') },
+    { id: '1', name: 'Silvio', lastMessage: 'Oi, como você está? Vamos nos ver!', photo: require('../../../assets/silvio.jpg') },
     { id: '2', name: 'Toni Ramos', lastMessage: 'Vamos marcar algo para o fim de semana?', photo: require('../../../assets/toni.jpeg') },
     { id: '3', name: 'Flávio Augusto', lastMessage: 'Quando irá lançar o livro?!', photo: require('../../../assets/flavio.jpg') },
     // Adicione mais dados de conversas conforme necessário
@@ -17,7 +18,7 @@ const Conversas = () => {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.chatItem}
-      onPress={() => navigation.navigate('InputScreen', { chatId: item.id, chatName: item.name })}
+      onPress={() => navigation.navigate('TelaConversa', { chatId: item.id, chatName: item.name })}
     >
       <Image source={item.photo} style={styles.chatPhoto} />
       <View style={styles.chatDetails}>
@@ -31,10 +32,10 @@ const Conversas = () => {
     <View style={styles.container}>
       <View style={styles.whatsappContainer}>
         <Text style={styles.whatsapp}>Whatsapp</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('PontosScreen')}>
+        <TouchableOpacity>
         <Entypo style={styles.lupa} name="magnifying-glass" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('PontosScreen')}>
+        <TouchableOpacity>
         <MaterialCommunityIcons style={styles.pontos} name="dots-vertical" />
         </TouchableOpacity>
       </View>
@@ -87,8 +88,8 @@ const styles = StyleSheet.create({
     borderBottomColor: '#ccc',
   },
   chatPhoto: {
-    width: 35,
-    height: 35,
+    width: 45,
+    height: 45,
     borderRadius: 25,
     marginRight: 16,
   },
@@ -96,17 +97,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   chatName: {
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: 'bold',
   },
   lastMessage: {
     color: '#888',
-    fontSize: 12,
+    fontSize: 15,
   },
   tabBar: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: '#075C55',
+    backgroundColor: '#0a796f',
     color: 'white',
     padding: 10,
     width: '100%',
@@ -115,64 +116,69 @@ const styles = StyleSheet.create({
   },
 
   tabCamera: {
-    fontSize: 20,
+    fontSize: 24,
     color: "#82B3AF",
   },
 
   tabConversas: {
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 20,
+    // fontWeight: 'bold',
     color: '#ffffff',
-    borderBottomWidth: 2,
+    borderBottomWidth: 3,
     borderBottomColor: 'white',
-    paddingBottom: 11,
-    marginBottom: -10,
-    paddingHorizontal: 10,
+    paddingBottom: 14,
+    marginBottom: -15,
+    paddingHorizontal: 15,
   },
 
   tabStatus: {
-    fontSize: 16,
+    fontSize: 20,
     color: '#82B3AF',
   },
 
   tabChamadas: {
-    fontSize: 16,
+    fontSize: 20,
     color: '#82B3AF',
   },
 
   whatsappContainer: {
-    alignSelf: 'flex-start',
-    padding: 20,
-    paddingRight: 190,
-    backgroundColor: '#075C55',
+    // alignSelf: 'flex-start',
+    padding: 30,
+    width: '100%',
+    
+    // paddingEnd: 350,
+    backgroundColor: '#0a796f',
   },
   whatsapp: {
-    fontSize: 20,
+    fontSize: 30,
     color: 'white',
+    marginTop: 20,
+    fontWeight: 'bold',
+    marginStart: -7, 
+
   },
   lupa: {
-    fontSize:  18,
+    fontSize:  25,
     color: 'white',
     alignSelf: 'flex start',
-    right: -145,
-    marginTop: -26,
+    right: 20,
+    marginTop: -25,
     position: 'absolute',
   },
   pontos: {
-    fontSize:  18,
+    fontSize:  25,
     color: 'white',
     alignSelf: 'flex start',
-    right: -170,
+    right: -15,
     marginTop: -25,
     position: 'absolute',
   },
 
-  // Estilos para o botão flutuante
   botaoFlutuante: {
     position: 'absolute',
     bottom: 16,
     right: 16,
-    backgroundColor: '#075C55',
+    backgroundColor: '#0a796f',
     borderRadius: 15,
     width: 56,
     height: 56,
