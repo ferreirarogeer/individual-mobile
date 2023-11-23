@@ -28,6 +28,13 @@
 ## Contribuição
 <p>Sinta-se à vontade para contribuir para este projeto através de sugestões, correções de bugs ou adição de novos recursos. Basta criar um fork do repositório, fazer as alterações desejadas e enviar um pull request.</p>
 
+## Comparação de Telas
+<div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+    <img src="https://github.com/ferreirarogeer/individual-mobile/blob/main/Original.jpg" alt="Tela de Conversas Original" width="300" style="margin-right: 10px;"/>
+    <img src="https://github.com/ferreirarogeer/individual-mobile/blob/main/clone%202.jpg" alt="Clone da Tela de Conversas Criado" width="300" style="margin-left: 10px;"/>
+</div>
+
+
 
 ## Ferramentas e tecnologias
 - [GitHub]() <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30" height="30"/>
